@@ -1,0 +1,109 @@
+﻿@page
+@model Veterinaria.App.Presentacion.Pages.AdminMascotasModel
+@{
+}
+
+
+        <div style="margin: 2% 2%; background-color: beige; color:rgb(56, 100, 242); width: 96%" class="container">
+            <h3 style="text-align: center; padding:10px; ">Gestion de Mascotas</h3>
+            <form action="">
+                <table>
+                    <tr>
+                        <td style="padding: 10px;">Nombre</td>
+                        <td style="padding: 10px;"><input class="form-control" id="cedula" type="text" required></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">Especie</td>
+                        <td style="padding: 10px;"><input class="form-control" id="especie" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">Raza</td>
+                        <td style="padding: 10px;"><input class="form-control" id="raza" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">Peso</td>
+                        <td style="padding: 10px;"><input class="form-control" id="peso" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">Edad</td>
+                        <td style="padding: 10px;"><input class="form-control" id="edad" type="number"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">Sexo</td>
+                        <td style="padding: 10px;"><select name="sexo">
+                                <option value="Macho">Macho</option>
+                                <option value="Hembra">Hembra</option>
+                            </select></td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px">Identificación Cuidador</td>
+                        <td style="padding: 10px"><input class="form-control" id="cuidador" type="number"></td>
+                        <td style="padding: 10px">
+                            <button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-search">
+                                    Buscar </span></button>
+                            <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-remove">
+                                    Crear </span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px;">
+                            <button class="btn btn-success" type="submit"><span class="glyphicon glyphicon-save">
+                                    Agregar </span></button>
+                            <button class="btn btn-primary" type="submit"><span class="glyphicon glyphicon-remove">
+                                    Borrar </span></button>
+                            <a class="btn btn-danger" href="#"><span
+                                    class="glyphicon glyphicon-backward">Regresar</span> </a>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+            <br><br>
+            <table id="tabla_mascotas" class="table table-bordered">
+                <thead style="background-color:rgb(56, 100, 242); color:white; text-align: center">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Especie</th>
+                        <th>Raza</th>
+                        <th>Sexo</th>
+                        <th>Cuidador</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pelusa</td>
+                        <td>Perro</td>
+                        <td>Labrador</td>
+                        <td>Hembra</td>
+                        <td>Maria</td>
+                        <td style="text-align:center">
+                            <button class="btn btn-secondary" type="submit" id="detalle">Detalles</button>
+                            <button class="btn btn-primary" type="submit" id="actualizar">Actualizar</button>
+                            <button class="btn btn-danger" type="submit" id="Eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Minino</td>
+                        <td>Gato</td>
+                        <td>Persa</td>
+                        <td>Macho</td>
+                        <td>Carlos</td>
+                        <td style="text-align:center">
+                            <button class="btn btn-secondary" type="submit" id="detalle">Detalles</button>
+                            <button class="btn btn-primary" type="submit" id="actualizar">Actualizar</button>
+                            <button class="btn btn-danger" type="submit" id="Eliminar">Eliminar</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            @section Scripts{
+            <script>
+                $(document).ready(function () {
+                    $('#tabla_mascotas').DataTable();
+                });
+            </script>
+            }
+        </div>
+    
