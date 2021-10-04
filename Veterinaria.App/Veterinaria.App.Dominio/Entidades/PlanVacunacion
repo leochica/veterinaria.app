@@ -2,7 +2,7 @@ using System;
 
 namespace Veterinaria.App.Dominio
 {
-    public class EntidadPlanVacunacion
+    public class PlanVacunacion
     {
         public int Id{get;set;}
         public string NombreVacuna{get;set;}
