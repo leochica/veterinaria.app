@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\Veterinaria\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Presentacion\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\Veterinaria\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Presentacion\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\Veterinaria\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Presentacion\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -36,3 +37,43 @@ C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de S
 C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\Veterinaria\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Presentacion\obj\Debug\netcoreapp3.1\Veterinaria.App.Presentacion.genruntimeconfig.cache
 C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\Veterinaria\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Presentacion\obj\Debug\netcoreapp3.1\Veterinaria.App.Presentacion.csproj.CopyComplete
 C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\Veterinaria\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Login\Login.cshtml.g.cs
+=======
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/appsettings.json
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/Veterinaria.App.Presentacion
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.deps.json
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.runtimeconfig.json
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.runtimeconfig.dev.json
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.dll
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.pdb
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.Views.dll
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.Views.pdb
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.csprojAssemblyReference.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.AssemblyInfoInputs.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.AssemblyInfo.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.csproj.CoreCompileInputs.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.MvcApplicationPartsAssemblyInfo.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.RazorAssemblyInfo.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.RazorAssemblyInfo.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.TagHelpers.input.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.TagHelpers.output.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.RazorCoreGenerate.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Error.cshtml.g.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Index.cshtml.g.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Privacy.cshtml.g.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Shared/_Layout.cshtml.g.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.RazorTargetAssemblyInfo.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.RazorTargetAssemblyInfo.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.Views.pdb
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/staticwebassets/Veterinaria.App.Presentacion.StaticWebAssets.Manifest.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/staticwebassets/Veterinaria.App.Presentacion.StaticWebAssets.xml
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.dll
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.pdb
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.genruntimeconfig.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.csproj.CopyComplete
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/AdminMascotas.cshtml.g.cs
+>>>>>>> b3e4a659078d3be75e9ddf77a114798de90c6a41
