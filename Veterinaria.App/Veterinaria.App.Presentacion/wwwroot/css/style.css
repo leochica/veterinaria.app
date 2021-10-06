@@ -3,3 +3,12 @@
   background-color: #fafafa;
   padding: 2rem;
 }
+
+.adiministrador{
+  display: flex;
+  gap: 2rem;
+}
+
+.inicio{
+  padding-top: 100px;
+}

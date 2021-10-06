@@ -78,3 +78,4 @@ C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de S
 /home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/AdminMascotas.cshtml.g.cs
 >>>>>>> b3e4a659078d3be75e9ddf77a114798de90c6a41
 C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\Veterinaria\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\AdminMascotas.cshtml.g.cs
+C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\Veterinaria\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Administrador\Administrador.cshtml.g.cs
