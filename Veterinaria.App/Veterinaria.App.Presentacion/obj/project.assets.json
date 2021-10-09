@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\ProyectoMinTicCiclo3G26\\Veterinaria.App\\Veterinaria.App.Presentacion\\Veterinaria.App.Presentacion.csproj",
+      "projectUniqueName": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Presentacion\\Veterinaria.App.Presentacion.csproj",
       "projectName": "Veterinaria.App.Presentacion",
-      "projectPath": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\ProyectoMinTicCiclo3G26\\Veterinaria.App\\Veterinaria.App.Presentacion\\Veterinaria.App.Presentacion.csproj",
+      "projectPath": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Presentacion\\Veterinaria.App.Presentacion.csproj",
       "packagesPath": "C:\\Users\\chica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\ProyectoMinTicCiclo3G26\\Veterinaria.App\\Veterinaria.App.Presentacion\\obj\\",
+      "outputPath": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Presentacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\chica\\AppData\\Roaming\\NuGet\\NuGet.Config",
