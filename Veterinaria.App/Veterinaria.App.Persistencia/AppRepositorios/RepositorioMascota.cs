@@ -36,6 +36,10 @@ namespace Veterinaria.App.Persistencia
         mascotaEncontrada.Nombre = mascota.Nombre;
         mascotaEncontrada.Edad = mascota.Edad;
         mascotaEncontrada.Peso = mascota.Peso;
+        mascotaEncontrada.Raza = mascota.Raza;
+        mascotaEncontrada.Especie = mascota.Especie;
+        mascotaEncontrada.Sexo = mascota.Sexo;
+        //mascotaEncontrada.IdCuidador = mascota.IdCuidador;
         this.appContext.SaveChanges();
         return mascotaEncontrada;
       }
@@ -66,7 +70,7 @@ namespace Veterinaria.App.Persistencia
 
     IEnumerable<Mascota> IRepositorioMascota.GetMascotas()
     {
-      return null;
+      return this.appContext.Mascotas;
     }
 
 

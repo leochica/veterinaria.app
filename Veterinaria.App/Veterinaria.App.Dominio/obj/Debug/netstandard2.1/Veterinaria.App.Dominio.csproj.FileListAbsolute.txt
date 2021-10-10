@@ -1,9 +1,18 @@
-C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Dominio\obj\Debug\netstandard2.1\Veterinaria.App.Dominio.csprojAssemblyReference.cache
-C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Dominio\obj\Debug\netstandard2.1\Veterinaria.App.Dominio.AssemblyInfoInputs.cache
-C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Dominio\obj\Debug\netstandard2.1\Veterinaria.App.Dominio.AssemblyInfo.cs
-C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Dominio\obj\Debug\netstandard2.1\Veterinaria.App.Dominio.csproj.CoreCompileInputs.cache
-C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Dominio\bin\Debug\netstandard2.1\Veterinaria.App.Dominio.deps.json
-C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Dominio\bin\Debug\netstandard2.1\Veterinaria.App.Dominio.dll
-C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Dominio\bin\Debug\netstandard2.1\Veterinaria.App.Dominio.pdb
-C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Dominio\obj\Debug\netstandard2.1\Veterinaria.App.Dominio.dll
-C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\ProyectoMinTicCiclo3G26\Veterinaria.App\Veterinaria.App.Dominio\obj\Debug\netstandard2.1\Veterinaria.App.Dominio.pdb
+C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/ProyectoMinTicCiclo3G26/Veterinaria.App/Veterinaria.App.Dominio/obj/Debug/netstandard2.1/Veterinaria.App.Dominio.csprojAssemblyReference.cache
+C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/ProyectoMinTicCiclo3G26/Veterinaria.App/Veterinaria.App.Dominio/obj/Debug/netstandard2.1/Veterinaria.App.Dominio.AssemblyInfoInputs.cache
+C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/ProyectoMinTicCiclo3G26/Veterinaria.App/Veterinaria.App.Dominio/obj/Debug/netstandard2.1/Veterinaria.App.Dominio.AssemblyInfo.cs
+C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/ProyectoMinTicCiclo3G26/Veterinaria.App/Veterinaria.App.Dominio/obj/Debug/netstandard2.1/Veterinaria.App.Dominio.csproj.CoreCompileInputs.cache
+C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/ProyectoMinTicCiclo3G26/Veterinaria.App/Veterinaria.App.Dominio/bin/Debug/netstandard2.1/Veterinaria.App.Dominio.deps.json
+C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/ProyectoMinTicCiclo3G26/Veterinaria.App/Veterinaria.App.Dominio/bin/Debug/netstandard2.1/Veterinaria.App.Dominio.dll
+C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/ProyectoMinTicCiclo3G26/Veterinaria.App/Veterinaria.App.Dominio/bin/Debug/netstandard2.1/Veterinaria.App.Dominio.pdb
+C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/ProyectoMinTicCiclo3G26/Veterinaria.App/Veterinaria.App.Dominio/obj/Debug/netstandard2.1/Veterinaria.App.Dominio.dll
+C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/ProyectoMinTicCiclo3G26/Veterinaria.App/Veterinaria.App.Dominio/obj/Debug/netstandard2.1/Veterinaria.App.Dominio.pdb
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/obj/Debug/netstandard2.1/Veterinaria.App.Dominio.csprojAssemblyReference.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/obj/Debug/netstandard2.1/Veterinaria.App.Dominio.AssemblyInfoInputs.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/obj/Debug/netstandard2.1/Veterinaria.App.Dominio.AssemblyInfo.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/obj/Debug/netstandard2.1/Veterinaria.App.Dominio.csproj.CoreCompileInputs.cache
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/obj/Debug/netstandard2.1/Veterinaria.App.Dominio.dll
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/obj/Debug/netstandard2.1/Veterinaria.App.Dominio.pdb
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/bin/Debug/netstandard2.1/Veterinaria.App.Dominio.deps.json
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/bin/Debug/netstandard2.1/Veterinaria.App.Dominio.dll
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/bin/Debug/netstandard2.1/Veterinaria.App.Dominio.pdb

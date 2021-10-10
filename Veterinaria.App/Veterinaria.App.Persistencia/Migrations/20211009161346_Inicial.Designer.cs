@@ -10,8 +10,8 @@ using Veterinaria.App.Persistencia;
 namespace Veterinaria.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20210927144834_Init")]
-    partial class Init
+    [Migration("20211009161346_Inicial")]
+    partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -102,14 +102,14 @@ namespace Veterinaria.App.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int?>("CuidadorId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Edad")
                         .HasColumnType("int");
 
                     b.Property<string>("Especie")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("IdCuidadorId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
@@ -125,7 +125,7 @@ namespace Veterinaria.App.Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CuidadorId");
+                    b.HasIndex("IdCuidadorId");
 
                     b.ToTable("Mascotas");
                 });
@@ -176,6 +176,24 @@ namespace Veterinaria.App.Persistencia.Migrations
                     b.ToTable("Personas");
 
                     b.HasDiscriminator<string>("Discriminator").HasValue("Persona");
+                });
+
+            modelBuilder.Entity("Veterinaria.App.Dominio.PlanVacunacion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<DateTime>("FechaVacuna")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NombreVacuna")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PlanesdeVacunacion");
                 });
 
             modelBuilder.Entity("Veterinaria.App.Dominio.Cuidador", b =>
@@ -251,14 +269,16 @@ namespace Veterinaria.App.Persistencia.Migrations
 
             modelBuilder.Entity("Veterinaria.App.Dominio.Mascota", b =>
                 {
-                    b.HasOne("Veterinaria.App.Dominio.Cuidador", null)
-                        .WithMany("ListaMascotas")
-                        .HasForeignKey("CuidadorId");
+                    b.HasOne("Veterinaria.App.Dominio.Cuidador", "IdCuidador")
+                        .WithMany("Mascotas")
+                        .HasForeignKey("IdCuidadorId");
+
+                    b.Navigation("IdCuidador");
                 });
 
             modelBuilder.Entity("Veterinaria.App.Dominio.Cuidador", b =>
                 {
-                    b.Navigation("ListaMascotas");
+                    b.Navigation("Mascotas");
                 });
 #pragma warning restore 612, 618
         }
