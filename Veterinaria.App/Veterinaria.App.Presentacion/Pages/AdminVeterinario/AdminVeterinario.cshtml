@@ -172,3 +172,212 @@
     </div>
 
 </div>
+
+<div id="accordion">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseVeterinario"
+                    aria-expanded="true" aria-controls="collapseVeterinario">
+                    Veterinarios Registrados
+                </button>
+            </h5>
+        </div>
+
+        <div id="collapseVeterinario" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <table class="table" style="border-collapse:collapse;">
+                <thead class="thead-dark" style="align-items: center; justify-content: center;">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombres</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Genero</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Direccion</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Contrasenia</th>
+                        <th scope="col">Fecha Registro</th>
+                        <th scope="col">Tipo de Perfil</th>
+                        <th scope="col">Especialidad</th>
+                        <th scope="col">Tarjeta Profesional</th>
+                        <th scope="col">Codigo</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    Registro de Veterinarios
+                </button>
+            </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="col-md-5 mb-3">
+                            <label for="validationDefaultVeterinario">Nombres</label>
+                            <input type="text" class="form-control" id="validationDefaultVeterinariosNombre"
+                                placeholder="Nombres" required>
+                        </div>
+                        <div class="col-md-5 mb-3">
+                            <label for="validationDefaultVeterinario">Apellidos</label>
+                            <input type="text" class="form-control" id="validationDefaultVeterinariosApellido"
+                                placeholder="Apellidos" required>
+                        </div>
+                        <div class="col-md-1 mb-3">
+                            <label for="validationDefaultVeterinario">Edad</label>
+                            <input type="number" class="form-control" id="validationDefaultVeterinariosEdad"
+                                placeholder="Edad" required>
+                        </div>
+                        <div class="form-group col-md-2 mb-3">
+                            <label for="inputGeneroVeterinario">Genero</label>
+                            <select id="inputGeneroVeterinario" class="form-control">
+                                <option selected>Seleccione el genero</option>
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2.5 mb-3">
+                            <label for="validationTelefonoVeterinario">Telefono</label>
+                            <input type="number" class="form-control" id="validationTelefonoVeterinario"
+                                placeholder="Telefono" required>
+                        </div>
+                        <div class="form-group col-md-6.5 mb-3">
+                            <label for="inputDireccionVeterinario">Direccion</label>
+                            <input type="text" class="form-control" id="inputDireccionVeterinario"
+                                placeholder="Carrera 5a No. 7-80" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCorreoVeterinario">Correo Electronico</label>
+                                <input type="email" class="form-control" id="inputCorreoVeterinario"
+                                    placeholder="carlos@gmail.com">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputcontraseniaVeterinario">Contrasenia</label>
+                                <input type="password" class="form-control" id="inputcontraseniaVeterinario"
+                                    placeholder="Contrasenia">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="date">Fecha de Registro</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="form-group col-md-2.5">
+                            <label for="inputTipoPerfil">Tipo de Perfil</label>
+                            <input type="text" class="form-control" id="inputTipoPerfil">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEspecializacion">Especializacion</label>
+                            <input type="text" class="form-control" id="inputEspecializacion">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputTarjetaProfesional">Tarjeta Profesional</label>
+                            <input type="text" class="form-control" id="inputTarjetaProfesional">
+                        </div>
+                        <div class="col-md-3 mb-7">
+                            <label for="validationDefaultCodigo">Codigo</label>
+                            <input type="number" class="form-control" id="validationDefaultCodigo"
+                                placeholder="Codigo Veterinario" required>
+                        </div>
+                        <div class="col-sm-10">
+                            <button type="Agregar" class="btn btn-primary">Agregar</button>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                    aria-expanded="false" aria-controls="collapseThree">
+                    Calendario de Citas
+                </button>
+            </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                <div class="agenda">
+                    <div class="table-responsive">
+                        <table class="table table-condensed table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Hora</th>
+                                    <th>Evento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Single event in a single day -->
+                                <tr>
+                                    <td class="agenda-date" class="active" rowspan="1">
+                                        <div class="dayofmonth">26</div>
+                                        <div class="dayofweek">Lunes</div>
+                                        <div class="shortdate text-muted">Agosto, 2021</div>
+                                    </td>
+                                    <td class="agenda-time">
+                                        7:30 AM
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            <i class="glyphicon glyphicon-repeat text-muted"
+                                                title="Repeating event"></i> 
+                                            Cita general
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <!-- Multiple events in a single day (note the rowspan) -->
+                                <tr>
+                                    <td class="agenda-date" class="active" rowspan="3">
+                                        <div class="dayofmonth">24</div>
+                                        <div class="dayofweek">Jueves</div>
+                                        <div class="shortdate text-muted">Septiembre, 2021</div>
+                                    </td>
+                                    <td class="agenda-time">
+                                        8:00 - 9:00 AM
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            Cirugia General Firulais
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="agenda-time">
+                                        10:15 AM - 12:00 PM
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            Reunion 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="agenda-time">
+                                        7:00 - 9:00 PM
+                                    </td>
+                                    <td class="agenda-events">
+                                        <div class="agenda-event">
+                                            Turno nocturno
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
