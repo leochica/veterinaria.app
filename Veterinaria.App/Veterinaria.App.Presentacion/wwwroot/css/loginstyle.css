@@ -1,14 +1,14 @@
-body{
-  background-color: #c6c7c8
+body {
+	background-color: #c6c7c8;
 }
-.logo{
+.logo {
 	max-width: 160px;
 }
 
 .login {
 	display: flex;
 	min-height: 80vh;
-  margin: auto;
+	margin: auto;
 }
 
 .form {

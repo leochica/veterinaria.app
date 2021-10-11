@@ -71,7 +71,7 @@ namespace Veterinaria.App.Persistencia
 
     IEnumerable<Veterinario> IRepositorioVeterinario.GetVeterinarios()
     {
-      return null;
+      return this.appContext.Veterinarios;
     }
 
 

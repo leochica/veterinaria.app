@@ -1,0 +1,174 @@
+﻿@page
+@model Veterinaria.App.Presentacion.Pages.AdminVeterinarioModel
+@{
+}
+
+<h2>@Model.titulo</h2>
+
+<div class="accordion" id="accordionExample">
+
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Listado de Veterinarios
+                </button>
+            </h2>
+        </div>
+        <div id="collapseOne" class='@(Model.modeForm == "edicion" ? "collapse" : "collapse show")' aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">Correo</th>
+                            <th scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var v in Model.listaVeterinarios)
+                        {
+                            <tr>
+                                <th scope="row">@v.Id</th>
+                                <td>@v.Nombres</td>
+                                <td>@v.Apellidos</td>
+                                <td>@v.Telefono</td>
+                                <td>@v.Correo</td>
+                                <td class="row">
+                                    <a class="btn btn-primary" asp-page="/AdminVeterinario/AdminVeterinario"
+                                    asp-route-id="@v.Id" style="margin-right:8px">Editar</a>
+                                    <form method="POST">
+                                        <button type="submit" class="btn btn-primary" asp-page-handler="Del"
+                                        asp-route-id="@v.Id">Eliminar</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Formulario para registro de veterinarios
+                </button>
+            </h2>
+        </div>
+        <div id="collapseTwo" class='@(Model.modeForm == "edicion" ? "collapse show" : "collapse")' aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <form method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label asp-for="@Model.veterinarioActual.Nombres" for="nombre">Nombres</label>
+                            <input asp-for="@Model.veterinarioActual.Nombres" type="text" class="form-control"
+                                id="nombre" name="Nombres" placeholder="Ingrese sus nombres">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label asp-for="@Model.veterinarioActual.Apellidos" for="apellido">Apellidos</label>
+                            <input asp-for="@Model.veterinarioActual.Apellidos" type="text" class="form-control"
+                                id="apellido" name="Apellidos" placeholder="Ingrese sus apellidos">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label asp-for="@Model.veterinarioActual.Edad" for="edad">Edad</label>
+                            <input asp-for="@Model.veterinarioActual.Edad" type="number" class="form-control" id="edad"
+                                name="Edad" placeholder="Ingrese su edad">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label asp-for="@Model.veterinarioActual.Genero" for="genero">Género</label>
+                            <select asp-for="@Model.veterinarioActual.Genero" id="genero" class="form-control"
+                                name="Genero">
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label asp-for="@Model.veterinarioActual.Telefono" for="telefono">Teléfono</label>
+                            <input asp-for="@Model.veterinarioActual.Telefono" type="tel" class="form-control"
+                                id="telefono" name="Telefono" placeholder="Telefono">
+                        </div>
+                        <div class="form-group col-md-8">
+                            <label asp-for="@Model.veterinarioActual.Direccion" for="direccion">Dirección</label>
+                            <input asp-for="@Model.veterinarioActual.Direccion" type="text" class="form-control"
+                                id="direccion" name="Direccion" placeholder="Direccion">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label asp-for="@Model.veterinarioActual.Correo" for="email">Correo Electrónico</label>
+                            <input asp-for="@Model.veterinarioActual.Correo" type="email" class="form-control"
+                                id="email" name="Correo" placeholder="Correo Electronico">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label asp-for="@Model.veterinarioActual.Contrasenia" for="password">Contraseña</label>
+                            <input asp-for="@Model.veterinarioActual.Contrasenia" type="password" class="form-control"
+                                id="password" name="Contrasenia" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label asp-for="@Model.veterinarioActual.FechaRegistro" for="tipoRegistro">Fecha De
+                                Registro</label>
+                            <input asp-for="@Model.veterinarioActual.FechaRegistro" type="date" class="form-control"
+                                id="tipoRegistro" name="FechaRegistro" placeholder=" ">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label asp-for="@Model.veterinarioActual.TipoPerfil" for="perfil">Tipo de Perfíl</label>
+                            <select asp-for="@Model.veterinarioActual.TipoPerfil" id="perfil" class="form-control"
+                                name="TipoPerfil">
+                                <option>Administrador</option>
+                                <option>Cuidador</option>
+                                <option selected>Veterinario</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label asp-for="@Model.veterinarioActual.Especialidad"
+                                for="especialidad">Especialidad</label>
+                            <input asp-for="@Model.veterinarioActual.Especialidad" type="text" class="form-control"
+                                id="especialidad" name="Especialidad" placeholder=" ">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label asp-for="@Model.veterinarioActual.TarjetaProfesional" for="tarjeta">Tarjeta
+                                Profesional</label>
+                            <input asp-for="@Model.veterinarioActual.TarjetaProfesional" type="text"
+                                class="form-control" id="tarjeta" name="TarjetaProfesional" placeholder=" ">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label asp-for="@Model.veterinarioActual.Codigo" for="codigo">Código</label>
+                            <input asp-for="@Model.veterinarioActual.Codigo" type="text" class="form-control"
+                                id="codigo" name="Codigo" placeholder=" ">
+                        </div>
+                    </div>
+                    <div class="form-group paddingtop">
+                        <button type="submit" class="btn btn-primary btn-1" asp-page-handler="Add">Agregar</button>
+
+                        @if (Model.modeForm == "adicion")
+                        {
+                            <button type="reset" class="btn btn-primary">Limpiar Campos</button>
+                        }
+
+                        @if (Model.modeForm == "edicion")
+                        {
+                            <button type="submit" class="btn btn-primary btn-1" asp-page-handler="Edit">Guardar
+                                Cambios</button>
+                        }
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
