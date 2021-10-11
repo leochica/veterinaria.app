@@ -12,46 +12,30 @@ namespace Veterinaria.App.Presentacion.Pages
     public class AdminMascotasModel : PageModel
     {
         private static IRepositorioMascota repoMascota = new RepositorioMascota(new Persistencia.AppContext());
-        public IEnumerable<Mascota> listaMascotas;
-        public Mascota mascotaActual;
-        public String modeForm { get; set; } = "adicion";
-
-        public void OnGet(int idMascota)
+        public IEnumerable<Mascota> listaMascotas { get; set;}
+        [TempData]
+        public string mensaje { get; set; }  
+        public void OnGet()
         {
-            if (idMascota != 0)
-            {
-                mascotaActual = repoMascota.ObtenerMascota(idMascota);
-                modeForm = this.mascotaActual!= null ? "edicion" : "adicion";
-            }
             this.listaMascotas = repoMascota.GetMascotas();
+            Console.WriteLine("-------------------------");
+            //foreach (var item in listaMascotas){
+            //    
+            //    Console.WriteLine(item.Nombre);
+            //}
         }
 
-        public void OnPostEditar(Mascota mascota){
-            Console.WriteLine("Este es el nombre " + mascota.Id);
-            var mascotaModificada = repoMascota.EditarMascota(mascota);
-            if(mascotaModificada != null){
-                this.listaMascotas = repoMascota.GetMascotas();
-                Console.WriteLine("La mascota a sido editada");
-            }else{
-                Console.Write("Ocurrio un error al editar la mascota");
-            }
-        }
-        public void OnPostAdicionar(Mascota mascota){
-            repoMascota.AgregarMascota(mascota);
-            Console.WriteLine(mascota.IdCuidador);
-            this.listaMascotas = repoMascota.GetMascotas();
-        }
-        public void OnPostEliminar(int idMascota)
+        public ActionResult OnPostEliminar(int id)
         {
-            if (idMascota != 0)
+            if (id != 0)
             {
-                repoMascota.EliminarMascota(idMascota);
-                this.listaMascotas = repoMascota.GetMascotas();
-                Console.WriteLine("Mascota Eliminada");
+                repoMascota.EliminarMascota(id);
+                mensaje = "Mascota eliminada correctamente";
+                return RedirectToPage("/Admin/AdminMascotas");
             }
             else
             {
-                Console.WriteLine("Error al elimnar mascota");
+                return RedirectToPage();
             }
         }
     }

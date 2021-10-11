@@ -1,10 +1,13 @@
 using System;
 
+
+
 namespace Veterinaria.App.Dominio
 {
   public class Mascota
   {
     public int Id { get; set; }
+    
     public String Nombre { get; set; }
     public int Edad { get; set; }
     public int Peso { get; set; }

@@ -28,6 +28,7 @@ namespace Veterinaria.App.Persistencia
 
     Mascota IRepositorioMascota.EditarMascota(Mascota mascota)
     {
+      
       var mascotaEncontrada = this.appContext.Mascotas.FirstOrDefault(p => p.Id == mascota.Id);
 
       if (mascotaEncontrada != null)
@@ -68,11 +69,14 @@ namespace Veterinaria.App.Persistencia
     }
 
 
-    IEnumerable<Mascota> IRepositorioMascota.GetMascotas()
+    IEnumerable <Mascota> IRepositorioMascota.GetMascotas()
     {
+      var mascota = this.appContext.Mascotas;
+      foreach (var item in mascota){
+        Console.WriteLine(item.Nombre);
+      }
       return this.appContext.Mascotas;
     }
-
 
   }
 }
