@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Veterinaria.App.Persistencia.Migrations
 {
-    public partial class Init : Migration
+    public partial class Inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -34,6 +34,20 @@ namespace Veterinaria.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "PlanesdeVacunacion",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NombreVacuna = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    FechaVacuna = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PlanesdeVacunacion", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Mascotas",
                 columns: table => new
                 {
@@ -45,14 +59,14 @@ namespace Veterinaria.App.Persistencia.Migrations
                     Especie = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Raza = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Sexo = table.Column<int>(type: "int", nullable: false),
-                    CuidadorId = table.Column<int>(type: "int", nullable: true)
+                    IdCuidadorId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Mascotas", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Mascotas_Personas_CuidadorId",
-                        column: x => x.CuidadorId,
+                        name: "FK_Mascotas_Personas_IdCuidadorId",
+                        column: x => x.IdCuidadorId,
                         principalTable: "Personas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -172,15 +186,18 @@ namespace Veterinaria.App.Persistencia.Migrations
                 column: "NombreMascotaId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Mascotas_CuidadorId",
+                name: "IX_Mascotas_IdCuidadorId",
                 table: "Mascotas",
-                column: "CuidadorId");
+                column: "IdCuidadorId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
                 name: "Historias");
+
+            migrationBuilder.DropTable(
+                name: "PlanesdeVacunacion");
 
             migrationBuilder.DropTable(
                 name: "Citas");

@@ -28,6 +28,7 @@ namespace Veterinaria.App.Persistencia
 
     Mascota IRepositorioMascota.EditarMascota(Mascota mascota)
     {
+      
       var mascotaEncontrada = this.appContext.Mascotas.FirstOrDefault(p => p.Id == mascota.Id);
 
       if (mascotaEncontrada != null)
@@ -36,6 +37,10 @@ namespace Veterinaria.App.Persistencia
         mascotaEncontrada.Nombre = mascota.Nombre;
         mascotaEncontrada.Edad = mascota.Edad;
         mascotaEncontrada.Peso = mascota.Peso;
+        mascotaEncontrada.Raza = mascota.Raza;
+        mascotaEncontrada.Especie = mascota.Especie;
+        mascotaEncontrada.Sexo = mascota.Sexo;
+        //mascotaEncontrada.IdCuidador = mascota.IdCuidador;
         this.appContext.SaveChanges();
         return mascotaEncontrada;
       }
@@ -64,11 +69,14 @@ namespace Veterinaria.App.Persistencia
     }
 
 
-    IEnumerable<Mascota> IRepositorioMascota.GetMascotas()
+    IEnumerable <Mascota> IRepositorioMascota.GetMascotas()
     {
-      return null;
+      var mascota = this.appContext.Mascotas;
+      foreach (var item in mascota){
+        Console.WriteLine(item.Nombre);
+      }
+      return this.appContext.Mascotas;
     }
-
 
   }
 }

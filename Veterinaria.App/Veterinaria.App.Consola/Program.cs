@@ -14,7 +14,7 @@ namespace Veterinaria.App.Consola
     static void Main(string[] args)
     {
       Console.WriteLine("Hello World! \n");
-      AgregarVeterinario();
+      //AgregarVeterinario();
       //EditarVeterinario(1);
       //BuscarVeterinario(3);
       //EliminarVeterinario(3);
@@ -24,7 +24,7 @@ namespace Veterinaria.App.Consola
       //BuscarCuidador(1);
       //EliminarCuidador(1);
       //===============================
-      //AgregarMascota();
+      AgregarMascota();
       //EditarMascota(1);
       //BuscarMascota(1);
       //EliminarMascota(1);
@@ -134,13 +134,14 @@ namespace Veterinaria.App.Consola
       repoCuidador.EditarCuidador(cuidador);
     }
 
-    private static void BuscarCuidador(int IdCuidador)
+    private static Cuidador BuscarCuidador(int IdCuidador)
     {
       var cuidador = repoCuidador.ObtenerCuidador(IdCuidador);
       var datoNombre = "El nombre del cuidador es: " + cuidador.Nombres + "\n";
       var datoApellido = "El apellido del cuidador es: " + cuidador.Apellidos + "\n";
       var datoDireccion = "La direccion del cuidador es: " + cuidador.Direccion + "\n";
       Console.WriteLine(datoNombre);
+      return cuidador;
     }
 
     private static void EliminarCuidador(int IdCuidador)
@@ -158,6 +159,9 @@ namespace Veterinaria.App.Consola
 
     private static void AgregarMascota()
     {
+      //Cuidador cuidador = BuscarCuidador(1);
+      
+
       Mascota mascota = new Mascota
       {
         Nombre = "Rambo",
@@ -166,6 +170,7 @@ namespace Veterinaria.App.Consola
         Especie = "Perro",
         Raza = "Criollo",
         Sexo = SexoAnimal.Macho,
+        
       };
       repoMascota.AgregarMascota(mascota);
     }
