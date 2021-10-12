@@ -5738,36 +5738,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chica\\.nuget\\packages\\": {}
+    "/home/mauricio/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Presentacion\\Veterinaria.App.Presentacion.csproj",
+      "projectUniqueName": "/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/Veterinaria.App.Presentacion.csproj",
       "projectName": "Veterinaria.App.Presentacion",
-      "projectPath": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Presentacion\\Veterinaria.App.Presentacion.csproj",
-      "packagesPath": "C:\\Users\\chica\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Presentacion\\obj\\",
+      "projectPath": "/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/Veterinaria.App.Presentacion.csproj",
+      "packagesPath": "/home/mauricio/.nuget/packages/",
+      "outputPath": "/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\chica\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/mauricio/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Dominio\\Veterinaria.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Dominio\\Veterinaria.App.Dominio.csproj"
+            "/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/Veterinaria.App.Dominio.csproj": {
+              "projectPath": "/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/Veterinaria.App.Dominio.csproj"
             },
-            "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Persistencia\\Veterinaria.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Persistencia\\Veterinaria.App.Persistencia.csproj"
+            "/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Persistencia/Veterinaria.App.Persistencia.csproj": {
+              "projectPath": "/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Persistencia/Veterinaria.App.Persistencia.csproj"
             }
           }
         }
@@ -5798,16 +5796,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.413/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Presentacion\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

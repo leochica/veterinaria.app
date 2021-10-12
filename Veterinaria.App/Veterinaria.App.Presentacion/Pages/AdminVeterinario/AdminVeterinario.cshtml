@@ -30,6 +30,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @if(Model.listaVeterinarios != null){
                         @foreach (var v in Model.listaVeterinarios)
                         {
                             <tr>
@@ -47,6 +48,7 @@
                                     </form>
                                 </td>
                             </tr>
+                        }
                         }
                     </tbody>
                 </table>
@@ -69,6 +71,7 @@
                 <form method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-4">
+                            <input asp-for="@Model.veterinarioActual.Id" type="hidden" name="id">
                             <label asp-for="@Model.veterinarioActual.Nombres" for="nombre">Nombres</label>
                             <input asp-for="@Model.veterinarioActual.Nombres" type="text" class="form-control"
                                 id="nombre" name="Nombres" placeholder="Ingrese sus nombres">
