@@ -40,9 +40,10 @@ namespace Veterinaria.App.Persistencia
         mascotaEncontrada.Raza = mascota.Raza;
         mascotaEncontrada.Especie = mascota.Especie;
         mascotaEncontrada.Sexo = mascota.Sexo;
-        //mascotaEncontrada.IdCuidador = mascota.IdCuidador;
-        this.appContext.SaveChanges();
+        this.appContext.SaveChanges();  
+        
         return mascotaEncontrada;
+        
       }
       else
       {
@@ -71,11 +72,7 @@ namespace Veterinaria.App.Persistencia
 
     IEnumerable <Mascota> IRepositorioMascota.GetMascotas()
     {
-      var mascota = this.appContext.Mascotas;
-      foreach (var item in mascota){
-        Console.WriteLine(item.Nombre);
-      }
-      return this.appContext.Mascotas;
+      return this.appContext.Mascotas.AsNoTracking();
     }
 
   }

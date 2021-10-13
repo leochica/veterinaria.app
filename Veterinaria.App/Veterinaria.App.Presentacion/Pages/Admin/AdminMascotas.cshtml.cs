@@ -15,14 +15,10 @@ namespace Veterinaria.App.Presentacion.Pages
         public IEnumerable<Mascota> listaMascotas { get; set;}
         [TempData]
         public string mensaje { get; set; }  
+        
         public void OnGet()
         {
-            this.listaMascotas = repoMascota.GetMascotas();
-            Console.WriteLine("-------------------------");
-            //foreach (var item in listaMascotas){
-            //    
-            //    Console.WriteLine(item.Nombre);
-            //}
+            listaMascotas = repoMascota.GetMascotas();            
         }
 
         public ActionResult OnPostEliminar(int id)

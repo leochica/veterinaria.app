@@ -13,6 +13,7 @@ namespace Veterinaria.App.Presentacion.Pages
     {
         private static IRepositorioMascota repoMascota = new RepositorioMascota(new Persistencia.AppContext());
        
+        public IEnumerable<Mascota> listaMascotas { get; set;}
         [BindProperty]
         public modeloMascota mMascota { get; set; }
         [TempData]
@@ -24,7 +25,7 @@ namespace Veterinaria.App.Presentacion.Pages
             mMascota = covertirModelo(mascota);
         }
 
-        public ActionResult OnPost(){
+        public ActionResult OnPostEdit(){
             
             if(ModelState.IsValid){
                 
@@ -34,6 +35,7 @@ namespace Veterinaria.App.Presentacion.Pages
                 mensaje = "Mascota actualizada exitosamente";
                 return Redirect("/Admin/AdminMascotas");
             }else{
+                Console.WriteLine("Entro al else del editar");
                 return Page();
             }
         }
