@@ -7,8 +7,8 @@ namespace Veterinaria.App.Dominio
     public int Id { get; set; }
     public DateTime Fecha { get; set; }
     public Mascota IdMascota { get; set; }
-    public Mascota NombreMascota { get; set; }
-    public Cuidador NombreCuidador { get; set; }
+    //public Mascota NombreMascota { get; set; }
+    //public Cuidador NombreCuidador { get; set; }
     public Cita DatosCitas { get; set; }
     public String Diagnostico { get; set; }
     public String CarnetVacunacion { get; set; }

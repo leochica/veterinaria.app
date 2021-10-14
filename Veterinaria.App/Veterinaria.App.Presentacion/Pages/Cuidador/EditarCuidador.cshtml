@@ -1,0 +1,65 @@
+﻿@page
+@model Veterinaria.App.Presentacion.Pages.EditarCuidadorModel
+@{
+}
+
+<form method="POST">
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <input asp-for="mCuidador.Id" type="hidden" name="id">
+            <input asp-for="mCuidador.FechaRegistro" type="hidden" name="fechaRegistro">
+            <label asp-for="mCuidador.Nombres" for="nombre">Nombres</label>
+            <input asp-for="mCuidador.Nombres" type="text" class="form-control" id="nombre"
+                name="Nombres" placeholder="Ingrese sus nombres">
+        </div>
+        <div class="form-group col-md-4">
+            <label asp-for="@Model.mCuidador.Apellidos" for="apellido">Apellidos</label>
+            <input asp-for="@Model.mCuidador.Apellidos" type="text" class="form-control" id="apellido"
+                name="Apellidos" placeholder="Ingrese sus apellidos">
+        </div>
+        <div class="form-group col-md-2">
+            <label asp-for="@Model.mCuidador.Edad" for="edad">Edad</label>
+            <input asp-for="@Model.mCuidador.Edad" type="number" class="form-control" id="edad" name="Edad"
+                placeholder="Ingrese su edad">
+        </div>
+        <div class="form-group col-md-2">
+            <label asp-for="@Model.mCuidador.Genero" for="genero">Género</label>
+            <select asp-for="@Model.mCuidador.Genero" id="genero" class="form-control" name="Genero">
+                <option>Masculino</option>
+                <option>Femenino</option>
+                <option>Otro</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label asp-for="@Model.mCuidador.Telefono" for="telefono">Teléfono</label>
+            <input asp-for="@Model.mCuidador.Telefono" type="tel" class="form-control" id="telefono"
+                name="Telefono" placeholder="Telefono">
+        </div>
+        <div class="form-group col-md-8">
+            <label asp-for="@Model.mCuidador.Direccion" for="direccion">Dirección</label>
+            <input asp-for="@Model.mCuidador.Direccion" type="text" class="form-control" id="direccion"
+                name="Direccion" placeholder="Direccion">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label asp-for="@Model.mCuidador.Correo" for="email">Correo Electrónico</label>
+            <input asp-for="@Model.mCuidador.Correo" type="email" class="form-control" id="email" name="Correo"
+                placeholder="Correo Electronico">
+        </div>
+        <div class="form-group col-md-6">
+            <label asp-for="@Model.mCuidador.Contrasenia" for="password">Contraseña</label>
+            <input asp-for="@Model.mCuidador.Contrasenia" type="password" class="form-control" id="password"
+                name="Contrasenia" placeholder="Contraseña">
+        </div>
+    </div>
+    <div class="form-group paddingtop">
+        <button type="submit" class="btn btn-primary btn-1">Actualizar</button>
+    
+        <button type="reset" class="btn btn-primary">Limpiar Campos</button>
+       
+
+    </div>
+</form>
