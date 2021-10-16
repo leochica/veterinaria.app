@@ -20,11 +20,12 @@ namespace Veterinaria.App.Presentacion.Pages
         
         [TempData]
         public string mensaje { get; set; } 
+        
         public void OnGet(){}
 
         public ActionResult OnPost(){
             if(!ModelState.IsValid){
-                Console.WriteLine("Modelo no valido");
+                Console.WriteLine("Modelo Nueva Mascota no valido");
                 return Page();
                 
             }

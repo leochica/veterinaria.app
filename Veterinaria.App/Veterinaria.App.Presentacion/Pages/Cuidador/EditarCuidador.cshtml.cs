@@ -12,8 +12,11 @@ namespace Veterinaria.App.Presentacion.Pages
     public class EditarCuidadorModel : PageModel
     {
         private static IRepositorioCuidador repoCuidador = new RepositorioCuidador(new Persistencia.AppContext());
+        
         [BindProperty]
         public modeloCuidador mCuidador { get; set;}
+        
+        
         public modeloCuidador moCuidador { get; set;}
         public Cuidador cuidador { get; set; }
         
@@ -30,11 +33,11 @@ namespace Veterinaria.App.Presentacion.Pages
             cuidador = repoCuidador.ObtenerCuidador(id);
             
             mCuidador = convertirAModelo(cuidador);
-            Console.WriteLine("Nombre "+mCuidador.Nombres);
+            //Console.WriteLine("Nombre "+mCuidador.Nombres);
         }
 
         public modeloCuidador convertirAModelo(Cuidador m){
-            Console.WriteLine("Bien "+m.Nombres);
+            //Console.WriteLine("Nombre "+m.Nombres);
             modeloCuidador nuevoCuidador = new modeloCuidador{
                 
                 Id = m.Id,
@@ -54,7 +57,7 @@ namespace Veterinaria.App.Presentacion.Pages
 
         public ActionResult OnPost(int id)
         {
-            Console.WriteLine(ModelState.IsValid +" "+id);
+            Console.WriteLine("Modelo: "+ModelState.IsValid +", ID #"+id);
             if(ModelState.IsValid)
             {
                 var cuidadorModificado = mCuidador.convertirAClase(mCuidador);

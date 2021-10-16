@@ -14,14 +14,16 @@ namespace Veterinaria.App.Presentacion.Pages
         private static IRepositorioCuidador repoCuidador = new RepositorioCuidador(new Persistencia.AppContext());
         [BindProperty]
         public modeloCuidador mCuidador { get; set;}
+        
         [TempData]
         public string mensaje { get; set; } 
+        
         public void OnGet(){}
 
         public ActionResult OnPost()
         {
             if(!ModelState.IsValid){
-                Console.WriteLine("Modelo no valido");
+                Console.WriteLine("Modelo Nuevo Cuidador no valido");
                 return Page();                
             }
 

@@ -12,13 +12,20 @@ namespace Veterinaria.App.Presentacion.Pages
     public class AdminMascotasModel : PageModel
     {
         private static IRepositorioMascota repoMascota = new RepositorioMascota(new Persistencia.AppContext());
+        private static RepositorioCuidador repoCuidador = new RepositorioCuidador(new Persistencia.AppContext());
         public IEnumerable<Mascota> listaMascotas { get; set;}
         [TempData]
         public string mensaje { get; set; }  
         
-        public void OnGet()
+        public void OnGet(int id)
         {
-            listaMascotas = repoMascota.GetMascotas();            
+            if (id == 0)
+            {
+                listaMascotas = repoMascota.GetMascotas(); 
+            }else
+            {
+                //listaMascotas = repoCuidador.GetCuidadorConMascotas(id);
+            }           
         }
 
         public ActionResult OnPostEliminar(int id)

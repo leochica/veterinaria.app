@@ -74,6 +74,5 @@ namespace Veterinaria.App.Persistencia
       return this.appContext.Cuidadores.AsNoTracking();
     }
 
-
   }
 }
