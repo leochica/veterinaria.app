@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Veterinaria.App.Dominio;
 using Veterinaria.App.Persistencia;
+using System.Text.Json;
 
 namespace Veterinaria.App.Presentacion.Pages
 {
@@ -18,14 +19,22 @@ namespace Veterinaria.App.Presentacion.Pages
         public modeloMascota mMascota { get; set; }
         [TempData]
         public string mensaje { get; set; } 
+
+        public int idCuidador { get; set; }
+        public int idMascota { get; set; }
+        
         public Mascota mascota { get; set; }
-        public void OnGet(int id)
+        
+        
+        public void OnGet(int idMascota, int idCuidador)
         {
-            mascota = repoMascota.ObtenerMascota(id);
+            this.idMascota = idMascota;
+            this.idCuidador = idCuidador;
+            mascota = repoMascota.ObtenerMascota(idMascota);
             mMascota = covertirModelo(mascota);
         }
 
-        public ActionResult OnPostEdit(){
+        public ActionResult OnPostEdit(int idCuidador){
             
             if(ModelState.IsValid){
                 
@@ -33,7 +42,7 @@ namespace Veterinaria.App.Presentacion.Pages
                 var mascotaModificada = repoMascota.EditarMascota(mascotaActualizada);
                 
                 mensaje = "Mascota actualizada exitosamente";
-                return Redirect("/Admin/AdminMascotas");
+                return RedirectToPage("/AdminMascotas/AdminMascotas", new {idCuidador});
             }else{
                 Console.WriteLine("Entro al else del editar");
                 return Page();

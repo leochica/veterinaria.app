@@ -8,7 +8,7 @@ namespace Veterinaria.App.Presentacion.Pages
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "Ingrese los nombre del cuidador")]
+        [Required(ErrorMessage = "Ingrese los nombres del cuidador")]
         [Display(Name = "Nombres")]        
         public String Nombres { get; set; }
         
@@ -17,6 +17,7 @@ namespace Veterinaria.App.Presentacion.Pages
         public String Apellidos { get; set; }
         
         [Display(Name = "Edad")]
+        [Range(0,100, ErrorMessage = "Por favor valide la Edad 0 - 100 años")]
         public int Edad { get; set; }
         
         [Display(Name = "Genero")]

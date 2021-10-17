@@ -74,5 +74,11 @@ namespace Veterinaria.App.Persistencia
       return this.appContext.Cuidadores.AsNoTracking();
     }
 
+    Object IRepositorioCuidador.ObtenerConMascotas(int idObjeto){
+        
+            var objetoEncontrado = this.appContext.Cuidadores.AsNoTracking().Include("Mascotas").FirstOrDefault(p => p.Id == idObjeto);
+            return objetoEncontrado;
+        }
+
   }
 }

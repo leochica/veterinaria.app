@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:int?}"
 @model Veterinaria.App.Presentacion.Pages.NuevaMascotaModel
 @{
 }
@@ -84,26 +84,22 @@
                 </div>
             </div>
 
-            <!--<div class="form-group">
-                <div class="row">
-                    <div class="col-sm-2">
-                        <label asp-for="mMascota.IdCuidador"></label>
-                    </div>
-                    <div class="col-sm-4">
-                        <input asp-for="mMascota.IdCuidador" class="form-control" placeholder="ID Cuidador" type="number">
-                    </div>
-                    <span asp-validation-for="mMascota.IdCuidador" class="text-danger"></span>
-                </div>
-            </div>-->
+   
+                        
+  
 
             <div class="form-group">
                 <div class="row">
+                    <!--<input asp-for="mMascota.IdCuidador" type="hidden" value="@Model.idCuidador">-->
+                    <input asp-for="@Model.idCuidador" type="hidden" value="@Model.idCuidador">
                     <div class="col-sm-2 offset-sm-2">
-                        <input type="submit" value="Crear" class="btn btn-primary form-control">
+                        
+                        <button asp-route-id="@Model.idCuidador" class="btn btn-primary form-control">Crear</button>
+                        
 
                     </div>
                     <div class="col-sm-2">
-                        <a asp-page="/Admin/AdminMascotas" class="btn btn-success form-control">Regresar</a>
+                        <a asp-route-id="@Model.idCuidador" asp-page="/AdminMascotas/AdminMascotas" class="btn btn-success form-control">Regresar</a>
                     </div>
 
                 </div>

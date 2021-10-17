@@ -115,8 +115,6 @@ namespace Veterinaria.App.Persistencia.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
                     IdMascotaId = table.Column<int>(type: "int", nullable: true),
-                    NombreMascotaId = table.Column<int>(type: "int", nullable: true),
-                    NombreCuidadorId = table.Column<int>(type: "int", nullable: true),
                     DatosCitasId = table.Column<int>(type: "int", nullable: true),
                     Diagnostico = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CarnetVacunacion = table.Column<string>(type: "nvarchar(max)", nullable: true)
@@ -134,18 +132,6 @@ namespace Veterinaria.App.Persistencia.Migrations
                         name: "FK_Historias_Mascotas_IdMascotaId",
                         column: x => x.IdMascotaId,
                         principalTable: "Mascotas",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Historias_Mascotas_NombreMascotaId",
-                        column: x => x.NombreMascotaId,
-                        principalTable: "Mascotas",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Historias_Personas_NombreCuidadorId",
-                        column: x => x.NombreCuidadorId,
-                        principalTable: "Personas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -174,16 +160,6 @@ namespace Veterinaria.App.Persistencia.Migrations
                 name: "IX_Historias_IdMascotaId",
                 table: "Historias",
                 column: "IdMascotaId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Historias_NombreCuidadorId",
-                table: "Historias",
-                column: "NombreCuidadorId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Historias_NombreMascotaId",
-                table: "Historias",
-                column: "NombreMascotaId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Mascotas_IdCuidadorId",

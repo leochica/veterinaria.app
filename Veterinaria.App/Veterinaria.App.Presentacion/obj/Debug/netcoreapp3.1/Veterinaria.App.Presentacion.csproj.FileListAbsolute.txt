@@ -75,9 +75,8 @@ C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de S
 /home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.pdb
 /home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.genruntimeconfig.cache
 /home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.csproj.CopyComplete
-/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/AdminMascotas.cshtml.g.cs
 >>>>>>> b3e4a659078d3be75e9ddf77a114798de90c6a41
-C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/ProyectoMinTicCiclo3G26/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/AdminMascotas.cshtml.g.cs
+C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/ProyectoMinTicCiclo3G26/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/AdminMascotas/AdminMascotas.cshtml.g.cs
 C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/ProyectoMinTicCiclo3G26/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Administrador/Administrador.cshtml.g.cs
 C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/WebApp/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/appsettings.Development.json
 C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/WebApp/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/appsettings.json
@@ -100,7 +99,7 @@ C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de S
 C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/WebApp/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.TagHelpers.output.cache
 C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/WebApp/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Veterinaria.App.Presentacion.RazorCoreGenerate.cache
 C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/WebApp/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Administrador/Administrador.cshtml.g.cs
-C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/WebApp/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/AdminMascotas.cshtml.g.cs
+C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/WebApp/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/AdminMascotas/AdminMascotas.cshtml.g.cs
 C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/WebApp/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Error.cshtml.g.cs
 C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/WebApp/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Index.cshtml.g.cs
 C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/WebApp/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Login/Login.cshtml.g.cs
@@ -220,8 +219,6 @@ C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de S
 /home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/Veterinaria.App.Persistencia.dll
 /home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/Veterinaria.App.Dominio.pdb
 /home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/bin/Debug/netcoreapp3.1/Veterinaria.App.Persistencia.pdb
-/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/NuevaMascota.cshtml.g.cs
-/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Edit.cshtml.g.cs
 >>>>>>> 98708bed691182551044269851f633a40f2dc91b
 C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/WebApp/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Edit.cshtml.g.cs
 C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de Software G-85/Veterinaria/WebApp/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/NuevaMascota.cshtml.g.cs
@@ -230,3 +227,6 @@ C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de S
 /home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Cuidador/Cuidador.cshtml.g.cs
 /home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Cuidador/NuevoCuidador.cshtml.g.cs
 /home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/Cuidador/EditarCuidador.cshtml.g.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/AdminMascotas/AdminMascotas.cshtml.g.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/AdminMascotas/Edit.cshtml.g.cs
+/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Presentacion/obj/Debug/netcoreapp3.1/Razor/Pages/AdminMascotas/NuevaMascota.cshtml.g.cs

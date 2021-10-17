@@ -15,6 +15,7 @@ namespace Veterinaria.App.Presentacion.Pages
         public IEnumerable<Cuidador> listaCuidadores { get; set;}
         [TempData]
         public string mensaje { get; set; } 
+        
         public void OnGet()
         {
             listaCuidadores = repoCuidador.GetCuidadores();

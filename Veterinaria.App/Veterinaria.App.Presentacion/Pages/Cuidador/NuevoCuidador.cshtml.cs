@@ -16,6 +16,9 @@ namespace Veterinaria.App.Presentacion.Pages
         public modeloCuidador mCuidador { get; set;}
         
         [TempData]
+        public int idCuidador { get; set; }
+
+        [TempData]
         public string mensaje { get; set; } 
         
         public void OnGet(){}

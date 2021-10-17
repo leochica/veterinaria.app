@@ -33,13 +33,15 @@ namespace Veterinaria.App.Persistencia
 
       if (mascotaEncontrada != null)
       {
-        mascotaEncontrada.Id = mascota.Id;
-        mascotaEncontrada.Nombre = mascota.Nombre;
-        mascotaEncontrada.Edad = mascota.Edad;
-        mascotaEncontrada.Peso = mascota.Peso;
-        mascotaEncontrada.Raza = mascota.Raza;
-        mascotaEncontrada.Especie = mascota.Especie;
-        mascotaEncontrada.Sexo = mascota.Sexo;
+        //mascotaEncontrada.Id = mascota.Id; 
+        mascotaEncontrada.Nombre = mascota.Nombre != null ? mascota.Nombre : mascotaEncontrada.Nombre;
+        mascotaEncontrada.Edad = mascota.Edad != 0 ? mascota.Edad : mascotaEncontrada.Edad;
+        mascotaEncontrada.Peso = mascota.Peso != 0 ? mascota.Peso : mascotaEncontrada.Peso;
+        mascotaEncontrada.Raza = mascota.Raza != null ? mascota.Raza : mascotaEncontrada.Raza;
+        mascotaEncontrada.Especie = mascota.Especie != null ? mascota.Especie : mascotaEncontrada.Especie;
+        mascotaEncontrada.Sexo = mascota.Sexo != null ? mascota.Sexo : mascotaEncontrada.Sexo;
+        mascotaEncontrada.IdCuidador = mascota.IdCuidador != null ? mascota.IdCuidador : mascotaEncontrada.IdCuidador;
+        
         this.appContext.SaveChanges();  
         
         return mascotaEncontrada;
@@ -72,7 +74,8 @@ namespace Veterinaria.App.Persistencia
 
     IEnumerable <Mascota> IRepositorioMascota.GetMascotas()
     {
-      return this.appContext.Mascotas.AsNoTracking();
+      return this.appContext.Mascotas.AsNoTracking().ToList();
+      //return this.appContext.Mascotas.ToList();
     }
 
   }

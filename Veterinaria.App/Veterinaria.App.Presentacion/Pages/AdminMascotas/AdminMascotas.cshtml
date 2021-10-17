@@ -1,0 +1,67 @@
+﻿@page
+@model Veterinaria.App.Presentacion.Pages.AdminMascotasModel
+@{
+
+}
+
+@if(@Model.cuidadorActual != null)
+{
+	<br />
+	<div class="container row">
+		<div class="col-6">
+			<h2 class="text-info">Mascotas de @Model.cuidadorActual.Nombres</h2>
+		</div>
+		<div class="col-6 text-right">
+			<a asp-route-id="@Model.cuidadorActual.Id" asp-page="NuevaMascota" class="btn btn-primary">Crear Mascota</a>
+			<a asp-page="/Cuidador/Cuidador" class="btn btn-info">Regresar</a>
+		</div>
+		
+	</div>
+}
+
+@if(Model.mensaje != null){
+	<div class="alert alert-info alert-dismissible" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		@Model.mensaje
+	</div>
+}
+
+<form method="POST">
+	@if (Model.cuidadorActual.Mascotas.Count() > 0)
+	{
+		<br /><br />
+		<table class="table table-striped border">
+			<tr class="tbale-secondary">
+				<th>Nombre</th>
+				<th>Especie</th>
+				<th>Sexo</th>
+				<th>Raza</th>
+				<th>Acciones</th>
+			</tr>
+			@foreach (var item in Model.cuidadorActual.Mascotas)
+			{
+				<tr>
+					<td>@Html.DisplayFor(m => item.Nombre)</td>
+					<td>@Html.DisplayFor(m => item.Especie)</td>
+					<td>@Html.DisplayFor(m => item.Sexo)</td>
+					<td>@Html.DisplayFor(m => item.Raza)</td>
+					<input type="hidden" asp-for="@Model.cuidadorActual.Id">
+					<td>
+						<button asp-route-idCuidador="@Model.cuidadorActual.Id" asp-route-idMascota="@item.Id" asp-page-handler="ELiminar"
+							onclick="return confirm('Esta seguro de eliminar la mascota?')"
+							class="btn btn-danger btn-sm">Borrar</button>
+						
+						<a asp-page="/AdminMascotas/Edit" asp-route-idMascota="@item.Id" asp-route-idCuidador="@Model.cuidadorActual.Id" class="btn btn-primary btn-sm">Editar</a>
+					</td>
+				</tr>
+			}
+		</table>
+
+	}
+	else
+	{
+		<br/><br/><h3>No hay Mascotas para mostrar</h3>
+	}
+</form>

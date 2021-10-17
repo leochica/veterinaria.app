@@ -1,6 +1,7 @@
 ﻿using System;
 using Veterinaria.App.Dominio;
 using Veterinaria.App.Persistencia;
+using System.Text.Json;
 
 namespace Veterinaria.App.Consola
 {
@@ -28,7 +29,14 @@ namespace Veterinaria.App.Consola
       //EditarMascota(1);
       //BuscarMascota(1);
       //EliminarMascota(1);
+      //===============================
+      //mascolasConCuidador(13);
 
+
+    }
+
+    private static void mascolasConCuidador(int id){
+      var cuidadorActual = (Cuidador)repoCuidador.ObtenerConMascotas(id);
     }
 
 
@@ -112,6 +120,7 @@ namespace Veterinaria.App.Consola
         Correo = "sophia@gmail.com",
         Contrasenia = "ytrewq",
         FechaRegistro = new DateTime(2021, 09, 27),
+        
       };
       repoCuidador.AgregarCuidador(cuidador);
     }
@@ -161,18 +170,32 @@ namespace Veterinaria.App.Consola
     {
       //Cuidador cuidador = BuscarCuidador(1);
       
-
-      Mascota mascota = new Mascota
+      Cuidador cuidador = (Cuidador)repoCuidador.ObtenerCuidador(1);
+      //var json = JsonSerializer.Serialize(cuidador);
+      //Console.WriteLine(json);
+      try
       {
-        Nombre = "Rambo",
-        Edad = 5,
-        Peso = 30,
-        Especie = "Perro",
-        Raza = "Criollo",
-        Sexo = SexoAnimal.Macho,
-        
-      };
-      repoMascota.AgregarMascota(mascota);
+            Mascota mascota = new Mascota
+          {
+            Nombre = "Rambo",
+            Edad = 5,
+            Peso = 30,
+            Especie = "Perro",
+            Raza = "Criollo",
+            Sexo = SexoAnimal.Macho,
+            //IdCuidador = cuidador,
+            
+          };
+          var mascotaAgredada = repoMascota.AgregarMascota(mascota);
+          mascotaAgredada.IdCuidador = cuidador;
+          repoMascota.EditarMascota(mascotaAgredada);  
+      }
+      catch (System.Exception ex)
+      {
+          
+         Console.WriteLine("Error: " + ex.Message);
+      }
+      
     }
 
     private static void EditarMascota(int IdMascota)
