@@ -18,7 +18,11 @@ namespace Veterinaria.App.Presentacion.Pages
         public Historia historiaActual { get; set; }
         public Mascota mascotaActual { get; set; }
 
+        [TempData]
+        public string mensaje { get; set; }  
+
         public int idCuidador { get; set; }
+
         public void OnGet(int idMascota, int idCuidador)
         {
             if (idMascota == 0)
@@ -29,10 +33,21 @@ namespace Veterinaria.App.Presentacion.Pages
                 {
                     this.idCuidador = idCuidador;
                     mascotaActual = repoMascota.ObtenerMascota(idMascota);
-                    historias = repoHistoria.ObtenerHistoriaConIdMascota(idMascota);
-                    //Console.WriteLine(historiaActual.Id);
-                    //historias = repoHistoria.GetHistorias();                    
+                    historias = repoHistoria.ObtenerHistoriaConIdMascota(idMascota);                                       
                 }
+        }
+
+        public ActionResult OnPostEliminar(int idHistoria, int idCuidador)
+        {
+            if(idHistoria != 0)
+            {
+                repoHistoria.EliminarHistoria(idHistoria);
+                mensaje = "Historia Eliminada";
+                return RedirectToPage("/AdminMascotas/AdminMascotas", new {idCuidador});
+            }else
+            {
+                return RedirectToPage();
+            }
         }
 
     }

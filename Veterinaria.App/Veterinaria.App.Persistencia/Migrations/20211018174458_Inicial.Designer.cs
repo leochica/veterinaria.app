@@ -10,7 +10,7 @@ using Veterinaria.App.Persistencia;
 namespace Veterinaria.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211017210808_Inicial")]
+    [Migration("20211018174458_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -71,6 +71,9 @@ namespace Veterinaria.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("TipoConsulta")
+                        .HasColumnType("int");
+
+                    b.Property<int>("VeterinarioId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

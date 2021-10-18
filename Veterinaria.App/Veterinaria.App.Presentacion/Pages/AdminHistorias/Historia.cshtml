@@ -3,7 +3,16 @@
 @{
 }
 
-<br />
+<br>
+
+@if(Model.mensaje != null){
+	<div class="alert alert-info alert-dismissible" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		@Model.mensaje
+	</div>
+}
 <div class="container row">
     <div class="col-6">
         <h2 class="text-info">Historia Clinica de @Model.mascotaActual.Nombre</h2>
@@ -12,32 +21,30 @@
         <a asp-route-idMascota="@Model.mascotaActual.Id" asp-route-idCuidador="@Model.idCuidador"
             asp-page="/AdminMascotas/AdminMascotas" class="btn btn-primary">Regresar</a>
     </div>
+
     @if (Model.historias.Count() > 0)
     {
-        <div class="list-group">
-            @foreach (var item in Model.historias)
-            {
-                <div style="margin-bottom:10px" class="list-group-item list-group-item-action flex-column align-items-start">
-                    <div class="d-flex w-200 justify-content-between">
-                        <h5 class="mb-2">Tipo de Consulta: </h5>
-                        <p>@item.TipoConsulta</p>
-                    </div>
-                    <div class="d-flex w-200 justify-content-between">
-                        <h5 style="margin-right:5px" class="mb-2">Fecha de Consulta: </h5>
-                        <p class="mb-2">@item.FechaConsulta</p>
-                    </div>
-                    <h5 class="mb-10">Procedemiento: </h5>
-                    <p class="mb-10">@item.Diagnostico</p>
+        <form method="POST">
+        <div class="row justify-content-center">
+        @foreach (var item in Model.historias)
+        {
+            <div class="card mx-1 my-1 pl-0 w-33">
+                <div class="card-body">
+                    <h4 class="card-title">Tipo de Consulta: @item.TipoConsulta</h4>
+                    <h6 class="card-title"><b>Fecha de Consulta: </b>@item.FechaConsulta</h6>
+                    <p class="card-text"><b>Procedimiento: </b> @item.Diagnostico</p>
+                    <button asp-route-idHistoria="@item.Id" asp-route-idCuidador="@Model.idCuidador" asp-page-handler="ELiminar"
+							onclick="return confirm('Esta seguro de eliminar la historia?')"
+							class="btn btn-danger btn-sm">Eliminar</button>
+                    <a class="btn btn-primary btn-sm" asp-page="/AdminHistorias/EditarHistoria" asp-route-idHistoria="@item.Id" asp-route-idCuidador="@Model.idCuidador">Editar</a>
                 </div>
-            }
+            </div>
+        }
         </div>
-
-
+        </form>
     }
     else
     {
         <div>No tiene historia</div>
     }
-
-
-</div>
+    </div>

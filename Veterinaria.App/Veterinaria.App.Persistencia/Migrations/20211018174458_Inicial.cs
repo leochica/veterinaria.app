@@ -115,6 +115,7 @@ namespace Veterinaria.App.Persistencia.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FechaConsulta = table.Column<DateTime>(type: "datetime2", nullable: false),
                     MascotaId = table.Column<int>(type: "int", nullable: false),
+                    VeterinarioId = table.Column<int>(type: "int", nullable: false),
                     TipoConsulta = table.Column<int>(type: "int", nullable: false),
                     Diagnostico = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },

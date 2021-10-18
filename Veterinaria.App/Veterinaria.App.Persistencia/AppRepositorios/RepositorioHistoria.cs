@@ -34,6 +34,7 @@ namespace Veterinaria.App.Persistencia
       {
         historiaEncontrada.FechaConsulta = historia.FechaConsulta == null ? historiaEncontrada.FechaConsulta : historia.FechaConsulta;
         historiaEncontrada.MascotaId = historia.MascotaId == null ? historiaEncontrada.MascotaId : historia.MascotaId;
+        historiaEncontrada.VeterinarioId = historia.VeterinarioId == null ? historiaEncontrada.VeterinarioId : historia.VeterinarioId;
         historiaEncontrada.TipoConsulta = historia.TipoConsulta == null ? historiaEncontrada.TipoConsulta : historia.TipoConsulta;
         historiaEncontrada.Diagnostico = historia.Diagnostico == null ? historiaEncontrada.Diagnostico : historia.Diagnostico;
         this.appContext.SaveChanges();
@@ -52,7 +53,7 @@ namespace Veterinaria.App.Persistencia
     }
 
 
-    void IRepositorioHistoria.EliminarHistoria(int idHistoria)
+    public void EliminarHistoria(int idHistoria)
     {
       var historiaEncontrada = this.appContext.Historias.FirstOrDefault(p => p.Id == idHistoria);
 
@@ -71,7 +72,7 @@ namespace Veterinaria.App.Persistencia
 
     public IEnumerable<Historia> ObtenerHistoriaConIdMascota(int idObjeto)
     {
-      var objetoEncontrado = this.appContext.Historias.Where(x => x.MascotaId == idObjeto);
+      var objetoEncontrado = this.appContext.Historias.Where(x => x.MascotaId == idObjeto).AsNoTracking();
       return objetoEncontrado;
       //return null;
     }

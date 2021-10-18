@@ -7,6 +7,7 @@ namespace Veterinaria.App.Dominio
     public int Id { get; set; }
     public DateTime FechaConsulta { get; set; }
     public int MascotaId { get; set; }
+    public int VeterinarioId{ get; set;}
     public Consulta TipoConsulta { get; set; }
     public String Diagnostico { get; set; }
     

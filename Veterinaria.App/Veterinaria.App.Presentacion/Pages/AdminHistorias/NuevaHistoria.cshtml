@@ -1,0 +1,59 @@
+﻿@page
+@model Veterinaria.App.Presentacion.Pages.NuevaHistoriaModel
+@{
+}
+
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10">
+                <h3 class="color-text-info">Registro Historia Clinica</h3>
+                <form method="POST">
+                    <div class="input-group mb-3">
+                        <span class="input-group-prepend input-group-text">Fecha Actual</span>
+                        <input class="form-control" type="text" value="@DateTime.Now" asp-for="nuevaHistoria.FechaConsulta"></input>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text">Veterinario</label>
+                        </div>
+                        <select class="custom-select" asp-for="nuevaHistoria.VeterinarioId">
+                            <option selected>Escoger...</option>
+                            @if(Model.veterinario != null && Model.veterinario.Count() > 0){
+                                foreach (var vet in Model.veterinario)
+                                {
+                                    <option value="@vet.Id">@vet.Nombres @vet.Apellidos</option>
+                                }
+                            }else
+                            {
+                                <option value="0">No hay veterinarios registrado</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text">Tipo Consulta</label>
+                        </div>
+                        <select class="custom-select" asp-for="nuevaHistoria.TipoConsulta">
+                            <option selected>Escoger...</option>
+                            <option value="General">General</option>
+                            <option value="Urgencia">Urgencia</option>
+                            <option value="Vacunacion">Vacunación</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">Diagnostico</span>
+                        <textarea asp-for="nuevaHistoria.Diagnostico" class="form-control" rows="10" aria-label="With textarea" placeholder="Ingrese los detalle de la consulta"></textarea>
+                    </div>
+                    <div class="mt-2 mb-3">
+                        <input type="hidden" asp-for="nuevaHistoria.MascotaId" value="@Model.idMascota">
+                        <button asp-route-idCuidador="@Model.idCuidador" asp-route-idMascota="@Model.idMascota" class="btn btn-success btn-lg">Guardar</button>
+                        <a asp-route-idCuidador="@Model.idCuidador" asp-page="/AdminMascotas/AdminMascotas" class="btn btn-primary btn-lg">Regresar</a>
+                    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

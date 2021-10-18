@@ -32,11 +32,24 @@ namespace Veterinaria.App.Consola
       //EliminarMascota(1);
       //===============================
       //mascolasConCuidador(13);
-      consultaHistoria(52);
+      //consultaHistoria(52);
+      AgregarHisto();
 
 
     }
 
+    private static void AgregarHisto()
+    {
+      Historia historia = new Historia {
+        FechaConsulta = DateTime.Now,
+        MascotaId = 1,
+        VeterinarioId = 1,
+        TipoConsulta = Consulta.General,
+        Diagnostico = "sd"
+      };
+
+      repoHistoria.AgregarHistoria(historia);
+    }
     private static void mascolasConCuidador(int id){
       var cuidadorActual = (Cuidador)repoCuidador.ObtenerConMascotas(id);
     }
@@ -48,11 +61,11 @@ namespace Veterinaria.App.Consola
     =========================
     */
 
-    private static void consultaHistoria (int idMascota)
+   /*  private static void consultaHistoria (int idMascota)
     {
       var historiaActual = repoHistoria.ObtenerHistoriaConIdMascota(idMascota);
       Console.WriteLine(historiaActual.Id);
-    }
+    } */
     private static void AgregarVeterinario()
     {
       Veterinario veterinario = new Veterinario

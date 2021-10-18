@@ -71,6 +71,9 @@ namespace Veterinaria.App.Persistencia.Migrations
                     b.Property<int>("TipoConsulta")
                         .HasColumnType("int");
 
+                    b.Property<int>("VeterinarioId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("MascotaId");
