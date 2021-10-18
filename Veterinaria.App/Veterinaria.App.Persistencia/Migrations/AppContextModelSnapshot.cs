@@ -59,26 +59,21 @@ namespace Veterinaria.App.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("CarnetVacunacion")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("DatosCitasId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Diagnostico")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("Fecha")
+                    b.Property<DateTime>("FechaConsulta")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("IdMascotaId")
+                    b.Property<int>("MascotaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoConsulta")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("DatosCitasId");
-
-                    b.HasIndex("IdMascotaId");
+                    b.HasIndex("MascotaId");
 
                     b.ToTable("Historias");
                 });
@@ -230,17 +225,11 @@ namespace Veterinaria.App.Persistencia.Migrations
 
             modelBuilder.Entity("Veterinaria.App.Dominio.Historia", b =>
                 {
-                    b.HasOne("Veterinaria.App.Dominio.Cita", "DatosCitas")
-                        .WithMany()
-                        .HasForeignKey("DatosCitasId");
-
-                    b.HasOne("Veterinaria.App.Dominio.Mascota", "IdMascota")
-                        .WithMany()
-                        .HasForeignKey("IdMascotaId");
-
-                    b.Navigation("DatosCitas");
-
-                    b.Navigation("IdMascota");
+                    b.HasOne("Veterinaria.App.Dominio.Mascota", null)
+                        .WithMany("Historia")
+                        .HasForeignKey("MascotaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Veterinaria.App.Dominio.Mascota", b =>
@@ -250,6 +239,11 @@ namespace Veterinaria.App.Persistencia.Migrations
                         .HasForeignKey("IdCuidadorId");
 
                     b.Navigation("IdCuidador");
+                });
+
+            modelBuilder.Entity("Veterinaria.App.Dominio.Mascota", b =>
+                {
+                    b.Navigation("Historia");
                 });
 
             modelBuilder.Entity("Veterinaria.App.Dominio.Cuidador", b =>

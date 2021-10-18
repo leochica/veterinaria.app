@@ -13,6 +13,7 @@ namespace Veterinaria.App.Persistencia
     Historia ObtenerHistoria(int idHistoria);
     void EliminarHistoria(int idHistoria);
     IEnumerable<Historia> GetHistorias();
+   
   }
 
 

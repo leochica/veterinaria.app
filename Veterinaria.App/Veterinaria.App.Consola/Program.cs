@@ -12,6 +12,7 @@ namespace Veterinaria.App.Consola
     private static IRepositorioCuidador repoCuidador = new RepositorioCuidador(new Persistencia.AppContext());
     private static IRepositorioMascota repoMascota = new RepositorioMascota(new Persistencia.AppContext());
 
+    private static IRepositorioHistoria repoHistoria = new RepositorioHistoria(new Persistencia.AppContext());
     static void Main(string[] args)
     {
       Console.WriteLine("Hello World! \n");
@@ -25,12 +26,13 @@ namespace Veterinaria.App.Consola
       //BuscarCuidador(1);
       //EliminarCuidador(1);
       //===============================
-      AgregarMascota();
+      //gregarMascota();
       //EditarMascota(1);
       //BuscarMascota(1);
       //EliminarMascota(1);
       //===============================
       //mascolasConCuidador(13);
+      consultaHistoria(52);
 
 
     }
@@ -46,6 +48,11 @@ namespace Veterinaria.App.Consola
     =========================
     */
 
+    private static void consultaHistoria (int idMascota)
+    {
+      var historiaActual = repoHistoria.ObtenerHistoriaConIdMascota(idMascota);
+      Console.WriteLine(historiaActual.Id);
+    }
     private static void AgregarVeterinario()
     {
       Veterinario veterinario = new Veterinario

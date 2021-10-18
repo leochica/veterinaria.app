@@ -54,6 +54,8 @@
 							class="btn btn-danger btn-sm">Borrar</button>
 						
 						<a asp-page="/AdminMascotas/Edit" asp-route-idMascota="@item.Id" asp-route-idCuidador="@Model.cuidadorActual.Id" class="btn btn-primary btn-sm">Editar</a>
+
+						<a asp-page="/AdminHistorias/Historia" asp-route-idMascota="@item.Id" asp-route-idCuidador="@Model.cuidadorActual.Id" class="btn btn-secondary btn-sm">Historia Clinica</a>
 					</td>
 				</tr>
 			}

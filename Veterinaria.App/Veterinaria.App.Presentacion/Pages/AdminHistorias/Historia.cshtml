@@ -1,0 +1,43 @@
+﻿@page
+@model Veterinaria.App.Presentacion.Pages.HistoriaModel
+@{
+}
+
+<br />
+<div class="container row">
+    <div class="col-6">
+        <h2 class="text-info">Historia Clinica de @Model.mascotaActual.Nombre</h2>
+    </div>
+    <div class="col-6 text-right">
+        <a asp-route-idMascota="@Model.mascotaActual.Id" asp-route-idCuidador="@Model.idCuidador"
+            asp-page="/AdminMascotas/AdminMascotas" class="btn btn-primary">Regresar</a>
+    </div>
+    @if (Model.historias.Count() > 0)
+    {
+        <div class="list-group">
+            @foreach (var item in Model.historias)
+            {
+                <div style="margin-bottom:10px" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-200 justify-content-between">
+                        <h5 class="mb-2">Tipo de Consulta: </h5>
+                        <p>@item.TipoConsulta</p>
+                    </div>
+                    <div class="d-flex w-200 justify-content-between">
+                        <h5 style="margin-right:5px" class="mb-2">Fecha de Consulta: </h5>
+                        <p class="mb-2">@item.FechaConsulta</p>
+                    </div>
+                    <h5 class="mb-10">Procedemiento: </h5>
+                    <p class="mb-10">@item.Diagnostico</p>
+                </div>
+            }
+        </div>
+
+
+    }
+    else
+    {
+        <div>No tiene historia</div>
+    }
+
+
+</div>

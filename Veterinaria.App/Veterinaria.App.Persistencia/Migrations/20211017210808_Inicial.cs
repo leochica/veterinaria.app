@@ -113,27 +113,20 @@ namespace Veterinaria.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    IdMascotaId = table.Column<int>(type: "int", nullable: true),
-                    DatosCitasId = table.Column<int>(type: "int", nullable: true),
-                    Diagnostico = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    CarnetVacunacion = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    FechaConsulta = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    MascotaId = table.Column<int>(type: "int", nullable: false),
+                    TipoConsulta = table.Column<int>(type: "int", nullable: false),
+                    Diagnostico = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Historias", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Historias_Citas_DatosCitasId",
-                        column: x => x.DatosCitasId,
-                        principalTable: "Citas",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Historias_Mascotas_IdMascotaId",
-                        column: x => x.IdMascotaId,
+                        name: "FK_Historias_Mascotas_MascotaId",
+                        column: x => x.MascotaId,
                         principalTable: "Mascotas",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
@@ -152,14 +145,9 @@ namespace Veterinaria.App.Persistencia.Migrations
                 column: "IdVeterinarioId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Historias_DatosCitasId",
+                name: "IX_Historias_MascotaId",
                 table: "Historias",
-                column: "DatosCitasId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Historias_IdMascotaId",
-                table: "Historias",
-                column: "IdMascotaId");
+                column: "MascotaId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Mascotas_IdCuidadorId",
@@ -170,13 +158,13 @@ namespace Veterinaria.App.Persistencia.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "Citas");
+
+            migrationBuilder.DropTable(
                 name: "Historias");
 
             migrationBuilder.DropTable(
                 name: "PlanesdeVacunacion");
-
-            migrationBuilder.DropTable(
-                name: "Citas");
 
             migrationBuilder.DropTable(
                 name: "Mascotas");

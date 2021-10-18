@@ -28,7 +28,8 @@
                         <label asp-for="mMascota.Edad"></label>
                     </div>
                     <div class="col-sm-4">
-                        <input asp-for="mMascota.Edad" class="form-control" placeholder="Edad de la mascota" type="number">
+                        <input asp-for="mMascota.Edad" class="form-control" placeholder="Edad de la mascota"
+                            type="number">
                     </div>
                     <span asp-validation-for="mMascota.Edad" class="text-danger"></span>
                 </div>
@@ -40,7 +41,8 @@
                         <label asp-for="mMascota.Peso"></label>
                     </div>
                     <div class="col-sm-4">
-                        <input asp-for="mMascota.Peso" class="form-control" placeholder="Peso en Kilogramos" type="number">
+                        <input asp-for="mMascota.Peso" class="form-control" placeholder="Peso en Kilogramos"
+                            type="number">
                     </div>
                     <span asp-validation-for="mMascota.Peso" class="text-danger"></span>
                 </div>
@@ -84,22 +86,18 @@
                     </div>
                 </div>
             </div>
-
-            
-   
-                        <input asp-for="@Model.idCuidador" type="hidden">
-             
-            
-
+            <input asp-for="@Model.idCuidador" type="hidden">
             <div class="form-group">
                 <div class="row">
                     <div class="col-sm-2 offset-sm-2">
-                        <button asp-page-handler="Edit" asp-route-idCuidador="@Model.idCuidador" class="btn btn-primary form-control">
-                        Actualizar
+                        <button asp-page-handler="Edit" asp-route-idCuidador="@Model.idCuidador"
+                            class="btn btn-primary form-control">
+                            Actualizar
                         </button>
                     </div>
                     <div class="col-sm-2">
-                        <a asp-page="/AdminMascotas/AdminMascotas" asp-route-idCuidador="@Model.idCuidador" class="btn btn-success form-control">Regresar</a>
+                        <a asp-page="/AdminMascotas/AdminMascotas" asp-route-idCuidador="@Model.idCuidador"
+                            class="btn btn-success form-control">Regresar</a>
                     </div>
                 </div>
             </div>
@@ -108,5 +106,5 @@
 </div>
 
 @section Scripts{
-    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+@{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
