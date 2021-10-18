@@ -17,8 +17,9 @@ namespace Veterinaria.App.Persistencia
     {
       if (!optionsBuilder.IsConfigured)
       {
-        //optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = BDVeterinariaGrupo26");
-        optionsBuilder.UseSqlServer("Data Source=.; Initial Catalog=BDVeterinariaGrupo26; User ID=SA; Password=Abcd1234;");
+        optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = BDVeterinariaGrupo26");
+        //optionsBuilder.UseSqlServer("Data Source=.; Initial Catalog=BDVeterinariaGrupo26; User ID=SA; Password=Abcd1234;");
+        //optionsBuilder.UseSqlServer("Server=tcp:dbveterinaria.chrbis5euyzg.us-east-1.rds.amazonaws.com,1433;Initial Catalog=dbveterinaria;Persist Security Info=False;User ID=Admin;Password=Vet$01db;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
       }     
     }
 
