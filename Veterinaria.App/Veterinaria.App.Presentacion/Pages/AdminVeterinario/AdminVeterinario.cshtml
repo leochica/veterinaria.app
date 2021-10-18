@@ -31,8 +31,6 @@
                         </tr>
                     </thead>
                     <tbody>
-
-
                         @if (Model.listaVeterinarios != null)
                         {
                             foreach (var v in Model.listaVeterinarios)
@@ -53,7 +51,6 @@
                                     </td>
                                 </tr>
                             }
-                        }
                         }
                     </tbody>
                 </table>
@@ -183,7 +180,7 @@
 </div>
 
 <div id="accordion">
-        <div class="card-header" id="headingTwo">
+    @* <div class="card-header" id="headingTwo">
         <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
         aria-expanded="false" aria-controls="collapseTwo">
