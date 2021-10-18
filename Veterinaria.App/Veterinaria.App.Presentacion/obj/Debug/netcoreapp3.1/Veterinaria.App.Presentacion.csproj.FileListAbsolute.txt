@@ -227,3 +227,4 @@ C:/Users/chica/Documents/#MISION TIC 2022 - PROGRAMACION/CICLO 3/Desarrollo de S
 >>>>>>> 98708bed691182551044269851f633a40f2dc91b
 C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\Veterinaria\WebApp\Veterinaria.App\Veterinaria.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\Edit.cshtml.g.cs
 C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\Veterinaria\WebApp\Veterinaria.App\Veterinaria.App.Presentacion\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\NuevaMascota.cshtml.g.cs
+C:\Users\chica\Documents\#MISION TIC 2022 - PROGRAMACION\CICLO 3\Desarrollo de Software G-85\Veterinaria\WebApp\Veterinaria.App\Veterinaria.App.Presentacion\obj\Debug\netcoreapp3.1\Veterinaria.App.Presentacion.csprojAssemblyReference.cache
