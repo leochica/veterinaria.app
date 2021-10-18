@@ -10,7 +10,7 @@ using Veterinaria.App.Persistencia;
 namespace Veterinaria.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211009161346_Inicial")]
+    [Migration("20211016224216_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -76,21 +76,11 @@ namespace Veterinaria.App.Persistencia.Migrations
                     b.Property<int?>("IdMascotaId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("NombreCuidadorId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NombreMascotaId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("DatosCitasId");
 
                     b.HasIndex("IdMascotaId");
-
-                    b.HasIndex("NombreCuidadorId");
-
-                    b.HasIndex("NombreMascotaId");
 
                     b.ToTable("Historias");
                 });
@@ -250,21 +240,9 @@ namespace Veterinaria.App.Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("IdMascotaId");
 
-                    b.HasOne("Veterinaria.App.Dominio.Cuidador", "NombreCuidador")
-                        .WithMany()
-                        .HasForeignKey("NombreCuidadorId");
-
-                    b.HasOne("Veterinaria.App.Dominio.Mascota", "NombreMascota")
-                        .WithMany()
-                        .HasForeignKey("NombreMascotaId");
-
                     b.Navigation("DatosCitas");
 
                     b.Navigation("IdMascota");
-
-                    b.Navigation("NombreCuidador");
-
-                    b.Navigation("NombreMascota");
                 });
 
             modelBuilder.Entity("Veterinaria.App.Dominio.Mascota", b =>

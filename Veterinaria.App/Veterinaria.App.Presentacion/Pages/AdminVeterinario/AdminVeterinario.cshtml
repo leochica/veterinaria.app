@@ -54,8 +54,7 @@
                                 </tr>
                             }
                         }
-
-
+                        }
                     </tbody>
                 </table>
             </div>
@@ -78,6 +77,7 @@
                 <form method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-4">
+                            <input asp-for="@Model.veterinarioActual.Id" type="hidden" name="id">
                             <label asp-for="@Model.veterinarioActual.Nombres" for="nombre">Nombres</label>
                             <input asp-for="@Model.veterinarioActual.Nombres" type="text" class="form-control"
                                 id="nombre" name="Nombres" placeholder="Ingrese sus nombres">
@@ -183,41 +183,6 @@
 </div>
 
 <div id="accordion">
-    @* <div class="card">
-        <div class="card-header" id="headingOne">
-        <h5 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseVeterinario"
-        aria-expanded="true" aria-controls="collapseVeterinario">
-        Veterinarios Registrados
-        </button>
-        </h5>
-        </div>
-
-        <div id="collapseVeterinario" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-        <table class="table" style="border-collapse:collapse;">
-        <thead class="thead-dark" style="align-items: center; justify-content: center;">
-        <tr>
-        <th scope="col">Id</th>
-        <th scope="col">Nombres</th>
-        <th scope="col">Apellidos</th>
-        <th scope="col">Edad</th>
-        <th scope="col">Genero</th>
-        <th scope="col">Telefono</th>
-        <th scope="col">Direccion</th>
-        <th scope="col">Correo</th>
-        <th scope="col">Contrasenia</th>
-        <th scope="col">Fecha Registro</th>
-        <th scope="col">Tipo de Perfil</th>
-        <th scope="col">Especialidad</th>
-        <th scope="col">Tarjeta Profesional</th>
-        <th scope="col">Codigo</th>
-        </tr>
-        </thead>
-        </table>
-        </div>
-        </div> *@
-
-    @* <div class="card">
         <div class="card-header" id="headingTwo">
         <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"

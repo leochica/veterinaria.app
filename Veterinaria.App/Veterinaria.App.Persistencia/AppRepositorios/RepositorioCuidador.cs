@@ -40,6 +40,7 @@ namespace Veterinaria.App.Persistencia
         cuidadorEncontrado.Telefono = cuidador.Telefono;
         cuidadorEncontrado.Direccion = cuidador.Direccion;
         cuidadorEncontrado.Correo = cuidador.Correo;
+        cuidadorEncontrado.Contrasenia = cuidador.Contrasenia;
         this.appContext.SaveChanges();
         return cuidadorEncontrado;
       }
@@ -70,9 +71,14 @@ namespace Veterinaria.App.Persistencia
 
     IEnumerable<Cuidador> IRepositorioCuidador.GetCuidadores()
     {
-      return null;
+      return this.appContext.Cuidadores.AsNoTracking();
     }
 
+    Object IRepositorioCuidador.ObtenerConMascotas(int idObjeto){
+        
+            var objetoEncontrado = this.appContext.Cuidadores.AsNoTracking().Include("Mascotas").FirstOrDefault(p => p.Id == idObjeto);
+            return objetoEncontrado;
+        }
 
   }
 }

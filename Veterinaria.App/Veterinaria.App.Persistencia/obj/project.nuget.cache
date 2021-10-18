@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QMStY15Obf+0KCF24tbllS5jAk3SFRqlg3SSheuc68g33T3O+MujVAwHQ2fGCIUtHb+a9lKDQ9gvpz5iDPM+Ug==",
+  "dgSpecHash": "B3ZNTutwNtP3BRDcw9cO1Myyfw7B2NPI2bhztJjvMwYf2nlRAVvIzBAVdrMnlXcneIGIvoveARlTVwOTiHcQuw==",
   "success": true,
   "projectFilePath": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Persistencia\\Veterinaria.App.Persistencia.csproj",
   "expectedPackageFiles": [
@@ -132,12 +132,5 @@
     "C:\\Users\\chica\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\chica\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Persistencia\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

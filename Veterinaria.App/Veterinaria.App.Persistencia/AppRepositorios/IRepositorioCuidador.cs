@@ -12,6 +12,7 @@ namespace Veterinaria.App.Persistencia
     Cuidador EditarCuidador(Cuidador cuidador);
     Cuidador ObtenerCuidador(int idCuidador);
     void EliminarCuidador(int idCuidador);
+    Object ObtenerConMascotas(int idObjeto);
     IEnumerable<Cuidador> GetCuidadores();
   }
 

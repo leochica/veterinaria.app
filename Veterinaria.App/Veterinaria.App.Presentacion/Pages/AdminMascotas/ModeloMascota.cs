@@ -15,6 +15,7 @@ namespace Veterinaria.App.Presentacion.Pages
         
         [Required(ErrorMessage = "Ingrese la edad de la mascota")]
         [Display(Name = "Edad:")]
+        [Range(0,30, ErrorMessage = "Por favor valide la Edad 0 - 30 años")]
         public int Edad { get; set; }
         
         [Required(ErrorMessage = "Ingrese el peso de la mascota")]
@@ -31,10 +32,10 @@ namespace Veterinaria.App.Presentacion.Pages
         [Display(Name = "Sexo:")]
         public SexoAnimal Sexo { get; set; }
         
-        /*
-        [Required(ErrorMessage = "Ingrese el ID del cuidador")]
-        [Display(Name = "Identificación Cuidador:")]
-        public Cuidador IdCuidador { get; set; }*/
+        
+        //[Required(ErrorMessage = "Ingrese el ID del cuidador")]
+        //[Display(Name = "Identificación Cuidador:")]
+        public Cuidador IdCuidador { get; set; }
 
         public Mascota convertirModelo (modeloMascota mMascota){
             Mascota nuevaMascota = new Mascota{
@@ -45,7 +46,7 @@ namespace Veterinaria.App.Presentacion.Pages
                 Especie = mMascota.Especie,
                 Raza = mMascota.Raza,
                 Sexo = mMascota.Sexo,
-                //IdCuidador = mMascota.IdCuidador
+                IdCuidador = mMascota.IdCuidador
             };
             return nuevaMascota;
         }

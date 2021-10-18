@@ -1,0 +1,113 @@
+﻿@page "{id:int?}"
+@model Veterinaria.App.Presentacion.Pages.NuevaMascotaModel
+@{
+}
+
+<br />
+<h2 class="text-info">Nueva Mascota</h2>
+<div class="border">
+    <form method="POST">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="container" style="padding: 30px;">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="mMascota.Nombre"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="mMascota.Nombre" class="form-control" placeholder="Nombre de la mascota"
+                            type="text">
+                    </div>
+                    <span asp-validation-for="mMascota.Nombre" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="mMascota.Edad"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="mMascota.Edad" class="form-control" placeholder="Edad de la mascota" type="number">
+                    </div>
+                    <span asp-validation-for="mMascota.Edad" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="mMascota.Peso"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="mMascota.Peso" class="form-control" placeholder="Peso en Kilogramos" type="number">
+                    </div>
+                    <span asp-validation-for="mMascota.Peso" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="mMascota.Especie"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="mMascota.Especie" class="form-control" placeholder="Perro, Gato, Ave, Otros"
+                            type="text">
+                    </div>
+                    <span asp-validation-for="mMascota.Especie" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="mMascota.Raza"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <input asp-for="mMascota.Raza" class="form-control" placeholder="Nombre de la raza" type="text">
+                    </div>
+                    <span asp-validation-for="mMascota.Raza" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label asp-for="mMascota.Sexo"></label>
+                    </div>
+                    <div class="col-sm-4">
+                        <select asp-for="mMascota.Sexo" class="custom-select">
+                            <option value="Macho">Macho</option>
+                            <option value="Hembra">Hembra</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+   
+                        
+  
+
+            <div class="form-group">
+                <div class="row">
+                    <!--<input asp-for="mMascota.IdCuidador" type="hidden" value="@Model.idCuidador">-->
+                    <input asp-for="@Model.idCuidador" type="hidden" value="@Model.idCuidador">
+                    <div class="col-sm-2 offset-sm-2">
+                        
+                        <button asp-route-id="@Model.idCuidador" class="btn btn-primary form-control">Crear</button>
+                        
+
+                    </div>
+                    <div class="col-sm-2">
+                        <a asp-route-id="@Model.idCuidador" asp-page="/AdminMascotas/AdminMascotas" class="btn btn-success form-control">Regresar</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

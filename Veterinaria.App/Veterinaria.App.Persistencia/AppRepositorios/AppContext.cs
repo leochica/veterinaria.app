@@ -19,7 +19,12 @@ namespace Veterinaria.App.Persistencia
       {
         optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = BDVeterinariaGrupo26");
         //optionsBuilder.UseSqlServer("Data Source=.; Initial Catalog=BDVeterinariaGrupo26; User ID=SA; Password=Abcd1234;");
-      }
+      }     
     }
+
+    /*protected override void OnModelCreating(ModelBuilder modelBuilder){
+
+            modelBuilder.Entity<Mascota>().HasOne(c => c.IdCuidador).WithMany(m => m.Mascotas).IsRequired();
+        }*/
   }
 }

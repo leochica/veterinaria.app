@@ -1,0 +1,62 @@
+﻿@page
+@model Veterinaria.App.Presentacion.Pages.CuidadorModel
+@{
+}
+
+<br />
+<div class="container row">
+	<div class="col-6">
+		<h2 class="text-info">Gestión de Cuidadores</h2>
+	</div>
+	<div class="col-6 text-right">
+		<a asp-page="NuevoCuidador" class="btn btn-primary">Crear Cuidador</a>
+	</div>
+</div>
+
+@if(Model.mensaje != null){
+	<div class="alert alert-info alert-dismissible" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		@Model.mensaje
+	</div>
+}
+
+<form method="POST">
+	@if (Model.listaCuidadores != null)
+	{
+		<br /><br />
+		<table class="table table-striped border">
+			<tr class="tbale-secondary">
+				<th>Nombre</th>
+				<th>Apellido</th>
+				<th>Telefono</th>
+				<th>Dirección</th>
+				<th>Acciones</th>
+			</tr>
+			@foreach (var item in Model.listaCuidadores)
+			{
+				<tr>
+					<td>@Html.DisplayFor(m => item.Nombres)</td>
+					<td>@Html.DisplayFor(m => item.Apellidos)</td>
+					<td>@Html.DisplayFor(m => item.Telefono)</td>
+					<td>@Html.DisplayFor(m => item.Direccion)</td>
+					<td>
+						<button asp-route-id="@item.Id" asp-page-handler="ELiminar"
+					        onclick="return confirm('Esta seguro de eliminar al cuidador?')"
+					        class="btn btn-danger btn-sm">Borrar</button>
+
+						<a asp-route-id="@item.Id" asp-page="EditarCuidador" class="btn btn-primary btn-sm">Editar</a>
+                        
+                        <a asp-route-idCuidador="@item.Id" asp-page="/AdminMascotas/AdminMascotas" class="btn btn-success btn-sm">Mascotas</a>
+					</td>
+				</tr>
+			}
+		</table>
+
+	}
+	else
+	{
+		<h3>No hay Cuidadores para mostrar</h3>
+	}
+</form>
