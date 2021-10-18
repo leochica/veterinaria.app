@@ -7263,31 +7263,33 @@
     ]
   },
   "packageFolders": {
-    "/home/mauricio/.nuget/packages/": {}
+    "C:\\Users\\chica\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Persistencia/Veterinaria.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Persistencia\\Veterinaria.App.Persistencia.csproj",
       "projectName": "Veterinaria.App.Persistencia",
-      "projectPath": "/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Persistencia/Veterinaria.App.Persistencia.csproj",
-      "packagesPath": "/home/mauricio/.nuget/packages/",
-      "outputPath": "/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Persistencia/obj/",
+      "projectPath": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Persistencia\\Veterinaria.App.Persistencia.csproj",
+      "packagesPath": "C:\\Users\\chica\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/mauricio/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\chica\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/Veterinaria.App.Dominio.csproj": {
-              "projectPath": "/home/mauricio/Documentos/Proyectos_C/veterinaria.app/Veterinaria.App/Veterinaria.App.Dominio/Veterinaria.App.Dominio.csproj"
+            "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Dominio\\Veterinaria.App.Dominio.csproj": {
+              "projectPath": "C:\\Users\\chica\\Documents\\#MISION TIC 2022 - PROGRAMACION\\CICLO 3\\Desarrollo de Software G-85\\Veterinaria\\WebApp\\Veterinaria.App\\Veterinaria.App.Dominio\\Veterinaria.App.Dominio.csproj"
             }
           }
         }
@@ -7337,7 +7339,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.414/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
       }
     }
   }

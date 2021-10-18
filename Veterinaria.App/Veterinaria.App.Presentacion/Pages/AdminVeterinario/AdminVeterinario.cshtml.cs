@@ -85,13 +85,4 @@ namespace Veterinaria.App.Presentacion.Pages
 
 
     }
-
-    // public class Veterinario
-    // {
-    //     public int Index { get; set; }
-    //     public String Nombres { get; set; }
-    //     public String Apellidos { get; set; }
-    //     public String Telefono { get; set; }
-    //     public String Correo { get; set; }
-    // }
 }
